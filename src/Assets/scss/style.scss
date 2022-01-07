@@ -1,0 +1,118 @@
+
+.dln-tooltip {
+  font-size: 14px !important;
+  background-color: #222 !important;
+}
+.dln-tooltip-arrow {
+  color: #222 !important;
+}
+.text-truncate {
+  max-width: 100%;
+}
+.dln-toaster {
+  & > div {
+    border-radius: 10px;
+    &[class*='success'] {
+      background: #6ab83a;
+      color: #fff;
+    }
+    &[class*='error'] {
+      color: #fff;
+    }
+  }
+}
+.dln-section-spinner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 10;
+  .dln-spinner-body {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    .dln-page-spinner {
+      width: 3rem;
+      height: 3rem;
+      color: #6ab83a;
+    }
+  }
+  &.dln-select-spinner {
+    width: 94%;
+    height: 61%;
+    .dln-page-spinner {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+.dln-centered-vertically-modal {
+  .modal-dialog {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: unquote('calc(100vh - 20px)');
+    // 20px offset for the 10px margin on either side
+
+    .modal-content {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .dln-states {
+    &.col-md-5 {
+      flex: 0 0 47.66667%;
+      max-width: 47.66667%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .dln-states {
+    margin-bottom: 10px;
+  }
+}
+.dln-inner-page-seperation {
+  border-bottom: 1px solid #6ab83a;
+}
+.dln-datepicker {
+  &:before {
+    content: "\f073";
+    font-family: 'Font Awesome 5 Free';
+    top: 6px;
+    color: #666;
+    right: 22px;
+    position: absolute;
+    font-size: 16px;
+    z-index: 1;
+    font-weight: 900;
+  }
+  width: 100%;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.nav-tabs {
+  border-bottom: 1px solid #6ab83a !important;
+  .nav-link {
+    color: #495057;
+  }
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  border-color: #6ab83a #6ab83a #fff !important;
+  color: #6ab83a !important;
+}
+.react-datepicker-popper,
+.calendar-popout {
+  z-index: 111119999 !important;
+}
+.dln-casper-assets{
+  .dln-form-logo {
+    width: 170px;
+  }
+  .dln-form-logo--casper2{
+    width: 100px;
+  }
+}
