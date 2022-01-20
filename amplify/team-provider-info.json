@@ -1,0 +1,20 @@
+{
+  "dlntest": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dlntest-dlntest-215937-authRole",
+      "UnauthRoleArn": "arn:aws:iam::248439980354:role/amplify-dlntest-dlntest-215937-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::248439980354:role/amplify-dlntest-dlntest-215937-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-dlntest-dlntest-215937-deployment",
+      "UnauthRoleName": "amplify-dlntest-dlntest-215937-unauthRole",
+      "StackName": "amplify-dlntest-dlntest-215937",
+      "StackId": "arn:aws:cloudformation:us-east-1:248439980354:stack/amplify-dlntest-dlntest-215937/229c85d0-7a23-11ec-a1e6-124a2771568b",
+      "AmplifyAppId": "d2e46tif15ahtl"
+    },
+    "categories": {
+      "auth": {
+        "dlntestauth": {}
+      }
+    }
+  }
+}
