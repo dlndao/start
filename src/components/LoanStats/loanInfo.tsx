@@ -7,8 +7,8 @@ import bankIcon from "Assets/Images/icons/bank.png";
 
 //set loan data which exist in home tabs
 function LoanInfo({ loanData }) {
-  const totalFunded = loanData.totalFunded;
-  const totalRepaid = loanData.totalRepaid;
+  const totalFunded = loanData?.totalFunded;
+  const totalRepaid = loanData?.totalRepaid;
 
   useEffect(() => {
     (async () => {
