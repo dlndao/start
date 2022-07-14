@@ -8,7 +8,9 @@ import { UserProvider } from "contexts/UserAuthContext";
 import { Routes } from "routes";
 
 import "./styles.css";
-
+/**
+ * App entry - detecting the app current language 
+ */
 function App() {
   const [isArabic, setIsArabic] = useState(false);
 

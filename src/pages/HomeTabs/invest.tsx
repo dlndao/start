@@ -8,7 +8,10 @@ import { ProposalStatus } from "Enums/ProposalStatus";
 import SingleProposal from "components/ManageProposal/singleProposal";
 import FiltrationBar from "components/ManageProposal/filtrationBar";
 import Loader from "components/Layout/loader";
-
+/**
+ * fetch and display invested proposals
+ * @returns Ui element
+ */
 function Invest() {
   const href = window.location.href;
   let userData: any = {};

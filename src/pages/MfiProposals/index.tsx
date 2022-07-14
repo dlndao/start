@@ -12,7 +12,10 @@ import FiltrationBar from "components/ManageProposal/filtrationBar";
 import SingleProposal from "components/ManageProposal/singleProposal";
 import Footer from "components/Layout/footer";
 import Loader from "components/Layout/loader";
-
+/**
+ * fetch and display the MFI's proposals
+ * @returns UI element
+ */
 function MfiProposals() {
   const href = window.location.href;
 

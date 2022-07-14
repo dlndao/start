@@ -7,13 +7,21 @@ import { toast } from "react-toastify";
 import strings from "localization";
 
 import loader from "Assets/Images/loader.gif";
-
+/**
+ * this component responsible for assign proposals to campaigns 
+ */
 function AssignProposalToCampaign({
   data,
   assignModalClosed,
   mfiId,
   userId,
   callSpinner,
+}:{
+  data:any,
+  assignModalClosed:Function,
+  mfiId?: any,
+  userId:number,
+  callSpinner:Function,
 }) {
   const [showAssignModal, setShowAssignModal]: any = useState(true);
   const [loading, setLoading] = useState(false);

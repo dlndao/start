@@ -11,7 +11,10 @@ import Menu from "components/Layout/menu";
 import Footer from "components/Layout/footer";
 
 import loader from "Assets/Images/loader.gif";
-
+/**
+ * manage verify code flow
+ * @returns UI element
+ */
 function VerifyCode(props) {
   const initialInputs = () => ({
     inputs: {

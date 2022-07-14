@@ -16,7 +16,10 @@ import InviteUsers from "components/InviteInvestors";
 
 import loader from "Assets/Images/loader.gif";
 import { inviteIcon } from "Assets/Images";
-
+/**
+ * fetching and display campaign proposals
+ * @returns UI element
+ */
 function CampaignProposals() {
   const href = window.location.href;
 

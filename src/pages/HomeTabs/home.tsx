@@ -10,7 +10,10 @@ import Borrow from "./borrow";
 import Invest from "./invest";
 import Repaid from "./repaid";
 import Ignored from "./ignored";
-
+/**
+ * rendering the Home  page 
+ * @returns UI element
+ */
 function Home() {
   const [investText, setInvestText] = useState("");
   const [borrowText, setBorrowText] = useState("");
