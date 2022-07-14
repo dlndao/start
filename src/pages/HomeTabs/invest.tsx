@@ -38,6 +38,7 @@ function Invest() {
     if (data) {
       userData = JSON.parse(data);
     }
+    if(!data) return
     setLoadProposals(true);
     const balance = await API.get("auth", "/api/borrow/userStats", {
       headers: { "Content-Type": "application/json" },
@@ -52,6 +53,7 @@ function Invest() {
   //fetch others proposals to invest in it
   const getProposals = async () => {
     let data = localStorage.getItem("userData");
+    if(!data) return
     if (data) {
       userData = JSON.parse(data);
     }

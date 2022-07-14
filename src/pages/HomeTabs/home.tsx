@@ -65,6 +65,7 @@ function Home() {
       // setUserData(JSON.parse(data));
       _user = JSON.parse(data);
     }
+    if(!data)return
     // get loan total record from db
     const response: any = await getLoanInfo(_user.id);
     if (response) {

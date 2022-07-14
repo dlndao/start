@@ -45,6 +45,7 @@ function Ignored({ loanData }) {
       setUserData(JSON.parse(data));
       _user = JSON.parse(data);
     }
+    if (!data )return
     const proposals = await API.get(
       "auth",
       "/api/borrow/userIgnoredProposals",
@@ -52,10 +53,11 @@ function Ignored({ loanData }) {
         headers: { "Content-Type": "application/json" },
         queryStringParameters: { userId: _user.id },
       }
-    );
-
-    setProposals(proposals.data);
-    setFilteredProposals(proposals.data);
+    ).catch((error)=>{
+      return
+    })
+    setProposals(proposals?.data);
+    setFilteredProposals(proposals?.data);
     setLoadProposals(false);
   };
 

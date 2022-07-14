@@ -9,6 +9,7 @@ import bankIcon from "Assets/Images/icons/bank.png";
  * set loan data which exist in home tabs
  */
 
+
 function LoanInfo({ loanData }: {
   loanData: any
 }) {
