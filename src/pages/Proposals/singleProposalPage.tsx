@@ -78,7 +78,10 @@ const initialInputs = () => ({
   },
   isUpdateMode: false,
 });
-
+/**
+ * fetch and display single proposal information
+ * @returns 
+ */
 function SingleProposalPage() {
   const href = window.location.href;
   const fileInput: any = React.useRef<HTMLInputElement>();

@@ -21,7 +21,10 @@ Storage.configure({
   bucket: "dlnresources182402-dev",
   level: "public",
 });
-
+/**
+ * fetch and manage user profile
+ * @returns UI element
+ */
 function Profile() {
   const history: any = useHistory();
   const fileInput: any = React.useRef<HTMLInputElement>();

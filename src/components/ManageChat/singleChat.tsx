@@ -23,8 +23,12 @@ import {
   repayIcon,
   publishIcon,
 } from "Assets/Images/index";
-
-function SingleChat({ proposalTitle, proposalId, InviteModalClosed, isAll }) {
+/**
+ * single chat screen
+ */
+function SingleChat({ proposalTitle, proposalId, InviteModalClosed, isAll }:{
+  proposalTitle:string, proposalId?:any, InviteModalClosed:Function, isAll?:boolean
+}) {
   let userData: any = {};
 
   const [showInviteModal, setShowInviteModal]: any = useState(true);

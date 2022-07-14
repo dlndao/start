@@ -12,7 +12,10 @@ import Loader from "components/Layout/loader";
 import strings from "localization";
 
 import plusIcon from "Assets/Images/icons/plus.png";
-
+/**
+ * fetch and  display Campaigns 
+ * @returns UI element
+ */
 function Campaigns() {
   const [loadCampaign, setLoadCampaign] = useState(false);
   const [isHasAccess, setIsHasAccess] = useState(false);

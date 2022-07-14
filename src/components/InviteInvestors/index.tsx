@@ -10,12 +10,20 @@ import strings from "localization";
 import inviteIcon from "Assets/Images/icons/invite.png";
 import cancelIcon from "Assets/Images/icons/cancel.png";
 import plusIcon from "Assets/Images/icons/plus.png";
-
+/**
+ * this function is responsible for communicate with backer and investors 
+ * by sending thanks emails or invite to the system.
+ */
 function InviteUsers({
   data,
   InviteModalClosed,
   isBorrow = false,
   isCampaign = false,
+}:{
+  data: any,
+  InviteModalClosed: Function,
+  isBorrow?: boolean,
+  isCampaign?: boolean,
 }) {
   const [showInviteModal, setShowInviteModal]: any = useState(true);
   const [bakersEmails, setBakersEmails]: any = useState([]);

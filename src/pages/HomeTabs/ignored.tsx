@@ -10,7 +10,10 @@ import FiltrationBar from "components/ManageProposal/filtrationBar";
 
 import Loader from "components/Layout/loader";
 import LoanInfo from "components/LoanStats/loanInfo";
-
+/**
+ * fetch and display the ignored proposals that users ignored before
+ * @returns UI element
+ */
 function Ignored({ loanData }) {
   const [addClicked, setAddClicked] = useState(false);
   const [proposals, setProposals] = useState([]);

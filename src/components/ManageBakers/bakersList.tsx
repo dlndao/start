@@ -8,15 +8,21 @@ import strings from "localization";
 import SingleBaker from "./singleBaker";
 
 import loader from "Assets/Images/loader.gif";
+/**
+ * displaying all backers who already baked proposal or invited to bake
+ */
 
-//displaying all backers who already baked proposal or invited to bake
-function BakersList({ data, BakersModalClosed, isBorrow = false }) {
+function BakersList({ data, BakersModalClosed, isBorrow = false }:{
+  data:any, BakersModalClosed: Function, isBorrow?: boolean
+}) {
   const [showBakersModal, setShowBakersModal]: any = useState(true);
   const [bakers, setBakers]: any = useState();
   const [loadBakers, setLoadBakers] = useState(false);
   const [isArabic, setIsArabic] = useState(false);
 
-  //close bakers list modal, call parent functionality on close
+  /**
+   * close bakers list modal, call parent functionality on close
+   */
   const handleCloseModal = () => {
     setShowBakersModal(false);
     BakersModalClosed();
