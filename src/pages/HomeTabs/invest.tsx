@@ -8,7 +8,10 @@ import { ProposalStatus } from "Enums/ProposalStatus";
 import SingleProposal from "components/ManageProposal/singleProposal";
 import FiltrationBar from "components/ManageProposal/filtrationBar";
 import Loader from "components/Layout/loader";
-
+/**
+ * fetch and display invested proposals
+ * @returns Ui element
+ */
 function Invest() {
   const href = window.location.href;
   let userData: any = {};
@@ -35,6 +38,7 @@ function Invest() {
     if (data) {
       userData = JSON.parse(data);
     }
+    if(!data) return
     setLoadProposals(true);
     const balance = await API.get("auth", "/api/borrow/userStats", {
       headers: { "Content-Type": "application/json" },
@@ -49,6 +53,7 @@ function Invest() {
   //fetch others proposals to invest in it
   const getProposals = async () => {
     let data = localStorage.getItem("userData");
+    if(!data) return
     if (data) {
       userData = JSON.parse(data);
     }

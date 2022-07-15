@@ -12,7 +12,10 @@ import Card from "components/Layout/layout";
 import Footer from "components/Layout/footer";
 
 import loader from "Assets/Images/loader.gif";
-
+/**
+ * manage user reset password flow
+ * @returns UI element
+ */
 function ResetPassword(props) {
   let history: any = useHistory();
   let { mfi }: any = useParams();

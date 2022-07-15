@@ -10,7 +10,10 @@ import FiltrationBar from "components/ManageProposal/filtrationBar";
 
 import Loader from "components/Layout/loader";
 import LoanInfo from "components/LoanStats/loanInfo";
-
+/**
+ * fetch and display the ignored proposals that users ignored before
+ * @returns UI element
+ */
 function Ignored({ loanData }) {
   const [addClicked, setAddClicked] = useState(false);
   const [proposals, setProposals] = useState([]);
@@ -42,6 +45,7 @@ function Ignored({ loanData }) {
       setUserData(JSON.parse(data));
       _user = JSON.parse(data);
     }
+    if (!data )return
     const proposals = await API.get(
       "auth",
       "/api/borrow/userIgnoredProposals",
@@ -49,10 +53,11 @@ function Ignored({ loanData }) {
         headers: { "Content-Type": "application/json" },
         queryStringParameters: { userId: _user.id },
       }
-    );
-
-    setProposals(proposals.data);
-    setFilteredProposals(proposals.data);
+    ).catch((error)=>{
+      return
+    })
+    setProposals(proposals?.data);
+    setFilteredProposals(proposals?.data);
     setLoadProposals(false);
   };
 

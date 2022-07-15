@@ -10,7 +10,10 @@ import Borrow from "./borrow";
 import Invest from "./invest";
 import Repaid from "./repaid";
 import Ignored from "./ignored";
-
+/**
+ * rendering the Home  page 
+ * @returns UI element
+ */
 function Home() {
   const [investText, setInvestText] = useState("");
   const [borrowText, setBorrowText] = useState("");
@@ -62,6 +65,7 @@ function Home() {
       // setUserData(JSON.parse(data));
       _user = JSON.parse(data);
     }
+    if(!data)return
     // get loan total record from db
     const response: any = await getLoanInfo(_user.id);
     if (response) {

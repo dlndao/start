@@ -8,8 +8,16 @@ import SingleProposal from "components/ManageProposal/singleProposal";
 import FiltrationBar from "components/ManageProposal/filtrationBar";
 import Loader from "components/Layout/loader";
 import LoanInfo from "components/LoanStats/loanInfo";
+/**
+ * fetch and display Borrows info 
+ * @returns UI element
+ */
+function Borrow({ borrowProposals, handleCallSpinner, loanData }:{
+  borrowProposals: [any],
+  handleCallSpinner: Function,
+  loanData:any
 
-function Borrow({ borrowProposals, handleCallSpinner, loanData }) {
+}) {
   const [addClicked, setAddClicked] = useState(false);
   const proposals = borrowProposals;
   const [filteredProposals, setFilteredProposals] = useState(borrowProposals);

@@ -17,7 +17,9 @@
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration": true,
     "jsx": "react",
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "useUnknownInCatchVariables": false
+
   },
   "include": ["src"],
   "exclude": [
@@ -28,5 +30,32 @@
     "webpack",
     "jest",
     "src/setupTests.ts"
-  ]
+  ],
+  "typedocOptions": {
+    "entryPoints": ["src/index.tsx", 
+      "src/services/erc20-client/erc20-client.ts", 
+      "src/components/InviteInvestors/index.tsx",
+      "src/components/LoanStats/loanInfo.tsx",
+      "src/components/ManageBakers/bakersList.tsx",
+      "src/services/casper.ts",
+      "src/components/ManageBakers/bakersList.tsx",
+      "src/components/ManageCampaigns/assignProposalToCampaign.tsx",
+      "src/API/api.ts",
+      "src/components/ManageChat/singleChat.tsx",
+      "src/pages/App/index.tsx",
+      "src/pages/Campaigns/campaignProposals.tsx",
+      "src/pages/Campaigns/campaigns.tsx",
+      "src/pages/HomeTabs/borrow.tsx",
+      "src/pages/HomeTabs/home.tsx",
+      "src/pages/HomeTabs/ignored.tsx",
+      "src/pages/HomeTabs/invest.tsx",
+      "src/pages/HomeTabs/repaid.tsx",
+      "src/pages/MfiProposals/index.tsx",
+      "src/pages/Proposals/singleProposalPage.tsx",
+      "src/pages/UserManagement/profile.tsx",
+      "src/pages/UserManagement/verifyCode.tsx"
+    ],
+    "out": "docs"
+
+  }
 }

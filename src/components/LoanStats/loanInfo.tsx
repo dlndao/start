@@ -4,9 +4,15 @@ import { Modal, Row, Col, Spinner } from "react-bootstrap";
 import strings from "localization";
 
 import bankIcon from "Assets/Images/icons/bank.png";
+/**
+ * this shared function using to display the selected loan fund and repay
+ * set loan data which exist in home tabs
+ */
 
-//set loan data which exist in home tabs
-function LoanInfo({ loanData }) {
+
+function LoanInfo({ loanData }: {
+  loanData: any
+}) {
   const totalFunded = loanData.totalFunded;
   const totalRepaid = loanData.totalRepaid;
 

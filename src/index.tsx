@@ -7,7 +7,6 @@ import config from "./aws-exports";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 
-// import { App } from './App';
 import "./index.scss";
 import { App } from "pages/App";
 import "typeface-lato";
