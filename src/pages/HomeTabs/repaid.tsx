@@ -12,7 +12,7 @@ import Loader from "components/Layout/loader";
  * @returns UI element
  */
 function Repaid({ repaidProposals, handleCallSpinner, loanData }:{
-  repaidProposals:[any], handleCallSpinner:Function, loanData:any
+  repaidProposals?:[any], handleCallSpinner?:Function, loanData?:any
 }) {
   const [proposals, setProposals]: any = useState(repaidProposals);
   const [loadProposals, setLoadProposals] = useState(false);
