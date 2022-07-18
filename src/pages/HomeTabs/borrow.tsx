@@ -13,9 +13,9 @@ import LoanInfo from "components/LoanStats/loanInfo";
  * @returns UI element
  */
 function Borrow({ borrowProposals, handleCallSpinner, loanData }:{
-  borrowProposals: [any],
-  handleCallSpinner: Function,
-  loanData:any
+  borrowProposals?: [any],
+  handleCallSpinner?: Function,
+  loanData?:any
 
 }) {
   const [addClicked, setAddClicked] = useState(false);
@@ -51,7 +51,7 @@ function Borrow({ borrowProposals, handleCallSpinner, loanData }:{
 
     setLoadProposals(true);
     if (filter !== 0) {
-      data = proposals.filter((prop: any) => prop.status === filter);
+      data = proposals?.filter((prop: any) => prop.status === filter);
     } else {
       data = proposals;
     }
