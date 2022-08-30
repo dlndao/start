@@ -6,7 +6,7 @@ export const camelCased = (myString: string) =>
   myString.replace(/_([a-z])/g, (g) => g[1].toUpperCase());
 
 export const parseTokenMeta = (str: string): Array<[string, string]> =>
-  str.split(',').map((s) => {
+  str?.split(',').map((s) => {
     const map = s.split('-');
     return [map[0], map[1]];
   });

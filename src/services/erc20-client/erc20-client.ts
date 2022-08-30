@@ -526,7 +526,7 @@ const getContractNamedKeys = async (contractHash: string) => {
 };
 
 const toCLMap = (map: Map<string, string>) => {
-  const clMap = CLValueBuilder.map([
+  const clMap = CLValueBuilder?.map([
     CLTypeBuilder.string(),
     CLTypeBuilder.string(),
   ]);
