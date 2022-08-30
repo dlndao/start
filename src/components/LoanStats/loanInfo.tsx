@@ -13,8 +13,8 @@ import bankIcon from "Assets/Images/icons/bank.png";
 function LoanInfo({ loanData }: {
   loanData: any
 }) {
-  const totalFunded = loanData.totalFunded;
-  const totalRepaid = loanData.totalRepaid;
+  const totalFunded = loanData?.totalFunded;
+  const totalRepaid = loanData?.totalRepaid;
 
   useEffect(() => {
     (async () => {
