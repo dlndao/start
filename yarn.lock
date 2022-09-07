@@ -5451,13 +5451,13 @@ async-eventemitter@^0.2.2:
   resolved "https://registry.yarnpkg.com/async-eventemitter/-/async-eventemitter-0.2.4.tgz#f5e7c8ca7d3e46aab9ec40a292baf686a0bafaca"
   integrity sha512-pd20BwL7Yt1zwDFy+8MX8F1+WCT8aQeKj0kQnTrH9WaeRETlRamVhD0JtRPmrV4GfOJ2F9CvdQkZeZhnh2TuHw==
   dependencies:
-    async "^2.4.0"
+    async "3.2.2"
 
 async-eventemitter@ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c:
   version "0.2.3"
   resolved "https://codeload.github.com/ahultgren/async-eventemitter/tar.gz/fa06e39e56786ba541c180061dbf2c0a5bbf951c"
   dependencies:
-    async "^2.4.0"
+    async "3.2.2"
 
 async-limiter@^1.0.0, async-limiter@~1.0.0:
   version "1.0.1"
@@ -5503,7 +5503,7 @@ authereum@^0.1.14:
   resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.1.14.tgz#5655e543b296d899136e350d09f9cfe4c12fbc38"
   integrity sha512-o1lsXXGg+oYDAEutZ8Ak1Qn2Dnk+qSyQ2ZokyLHRSYGJj6HpEHaSlQA6W3VTHD5r68Q+W0JD/BN9hDSF2xyshQ==
   dependencies:
-    async "3.2.0"
+    async "3.2.2"
     bn.js "5.1.2"
     ethereum-private-key-to-address "0.0.3"
     ethers "4.0.47"
@@ -9358,7 +9358,7 @@ eth-json-rpc-middleware@^1.5.0:
   resolved "https://registry.yarnpkg.com/eth-json-rpc-middleware/-/eth-json-rpc-middleware-1.6.0.tgz#5c9d4c28f745ccb01630f0300ba945f4bef9593f"
   integrity sha512-tDVCTlrUvdqHKqivYMjtFZsdD7TtpNLBCfKAcOpaVs7orBMS/A8HWro6dIzNtTZIR05FAbJ3bioFOnZpuCew9Q==
   dependencies:
-    async "^2.5.0"
+    async "3.2.2"
     eth-query "^2.1.2"
     eth-tx-summary "^3.1.2"
     ethereumjs-block "^1.6.0"
@@ -9492,7 +9492,7 @@ eth-tx-summary@^3.1.2:
   resolved "https://registry.yarnpkg.com/eth-tx-summary/-/eth-tx-summary-3.2.4.tgz#e10eb95eb57cdfe549bf29f97f1e4f1db679035c"
   integrity sha512-NtlDnaVZah146Rm8HMRUNMgIwG/ED4jiqk0TME9zFheMl1jOp6jL1m0NKGjJwehXQ6ZKCPr16MTr+qspKpEXNg==
   dependencies:
-    async "^2.1.2"
+    async "3.2.2"
     clone "^2.0.0"
     concat-stream "^1.5.1"
     end-of-stream "^1.1.0"
@@ -9602,7 +9602,7 @@ ethereumjs-block@^1.2.2, ethereumjs-block@^1.4.1, ethereumjs-block@^1.6.0:
   resolved "https://registry.yarnpkg.com/ethereumjs-block/-/ethereumjs-block-1.7.1.tgz#78b88e6cc56de29a6b4884ee75379b6860333c3f"
   integrity sha512-B+sSdtqm78fmKkBq78/QLKJbu/4Ts4P2KFISdgcuZUPDm9x+N7qgBPIIFUGbaakQh8bzuquiRVbdmvPKqbILRg==
   dependencies:
-    async "^2.0.1"
+    async "3.2.2"
     ethereum-common "0.2.0"
     ethereumjs-tx "^1.2.2"
     ethereumjs-util "^5.0.0"
@@ -9613,7 +9613,7 @@ ethereumjs-block@~2.2.0:
   resolved "https://registry.yarnpkg.com/ethereumjs-block/-/ethereumjs-block-2.2.2.tgz#c7654be7e22df489fda206139ecd63e2e9c04965"
   integrity sha512-2p49ifhek3h2zeg/+da6XpdFR3GlqY3BIEiqxGF8j9aSRIgkb7M1Ky+yULBKJOu8PAZxfhsYA+HxUk2aCQp3vg==
   dependencies:
-    async "^2.0.1"
+    async "3.2.2"
     ethereumjs-common "^1.5.0"
     ethereumjs-tx "^2.1.1"
     ethereumjs-util "^5.0.0"
@@ -9702,7 +9702,7 @@ ethereumjs-vm@^2.0.2, ethereumjs-vm@^2.1.0, ethereumjs-vm@^2.3.4, ethereumjs-vm@
   resolved "https://registry.yarnpkg.com/ethereumjs-vm/-/ethereumjs-vm-2.6.0.tgz#76243ed8de031b408793ac33907fb3407fe400c6"
   integrity sha512-r/XIUik/ynGbxS3y+mvGnbOKnuLo40V5Mj1J25+HEO63aWYREIqvWeRO/hnROlMBE5WoniQmPmhiaN0ctiHaXw==
   dependencies:
-    async "^2.1.2"
+    async "3.2.2"
     async-eventemitter "^0.2.2"
     ethereumjs-account "^2.0.3"
     ethereumjs-block "~2.2.0"
@@ -11593,7 +11593,7 @@ ipfs-api@^26.1.2:
   resolved "https://registry.yarnpkg.com/ipfs-api/-/ipfs-api-26.1.2.tgz#6b53d4720455060ad39784336234a4acc54d4332"
   integrity sha512-HkM6vQOHL9z9ZCXIrbDXvAOsIzfWPaAac9kY+SjUuVqMydWHzP8qTxfv5jaXResGbmLcbwcROhuqgJU+HrclSg==
   dependencies:
-    async "^2.6.1"
+    async "3.2.2"
     big.js "^5.2.2"
     bl "^2.1.2"
     bs58 "^4.0.1"
@@ -11785,7 +11785,7 @@ ipld-dag-pb@~0.14.11:
   resolved "https://registry.yarnpkg.com/ipld-dag-pb/-/ipld-dag-pb-0.14.11.tgz#df235a301fec8443cf933387cebb38e42c22c2a8"
   integrity sha512-ja4FH6elDprVuJBkNObFlq7+9h1Q3aoQx5SSG/v3I9e7j19nwyuMhLJYwBhdv29LiqpyD2cEqNrJLm8lWn0lJg==
   dependencies:
-    async "^2.6.1"
+    async "3.2.2"
     bs58 "^4.0.1"
     cids "~0.5.4"
     class-is "^1.1.0"
@@ -13149,7 +13149,7 @@ json-rpc-engine@^3.4.0, json-rpc-engine@^3.6.0:
   resolved "https://registry.yarnpkg.com/json-rpc-engine/-/json-rpc-engine-3.8.0.tgz#9d4ff447241792e1d0a232f6ef927302bb0c62a9"
   integrity sha512-6QNcvm2gFuuK4TKU1uwfH0Qd/cOSb9c1lls0gbnIhciktIUQJwz6NQNAW4B1KiGPenv7IKu97V222Yo1bNhGuA==
   dependencies:
-    async "^2.0.1"
+    async "3.2.2"
     babel-preset-env "^1.7.0"
     babelify "^7.3.0"
     json-rpc-error "^2.0.0"
@@ -13590,7 +13590,7 @@ libp2p-crypto-secp256k1@~0.2.2:
   resolved "https://registry.yarnpkg.com/libp2p-crypto-secp256k1/-/libp2p-crypto-secp256k1-0.2.3.tgz#212fc171d39dae7be3eaf4d9d311e0a8e9619c78"
   integrity sha512-DFrK89VdboacqM3vqWV8yt8FH9Ni181JJAOU2tRkJfUN9tNEV7VfZEg390NJxEQQbLsyH4HZ7on3QTpPHMHQZQ==
   dependencies:
-    async "^2.6.1"
+    async "3.2.2"
     multihashing-async "~0.5.1"
     nodeify "^1.0.1"
     safe-buffer "^5.1.2"
@@ -13601,7 +13601,7 @@ libp2p-crypto-secp256k1@~0.3.0:
   resolved "https://registry.yarnpkg.com/libp2p-crypto-secp256k1/-/libp2p-crypto-secp256k1-0.3.1.tgz#4cbeb857f5cfe5fefb1253e6b2994420c0ca166e"
   integrity sha512-evrfK/CeUSd/lcELUdDruyPBvxDmLairth75S32OLl3H+++2m2fV24JEtxzdFS9JH3xEFw0h6JFO8DBa1bP9dA==
   dependencies:
-    async "^2.6.2"
+    async "3.2.2"
     bs58 "^4.0.1"
     multihashing-async "~0.6.0"
     nodeify "^1.0.1"
@@ -13631,7 +13631,7 @@ libp2p-crypto@~0.12.1:
   integrity sha512-1/z8rxZ0DcQNreZhEsl7PnLr7DWOioSvYbKBLGkRwNRiNh1JJLgh0PdTySBb44wkrOGT+TxcGRd7iq3/X6Wxwg==
   dependencies:
     asn1.js "^5.0.0"
-    async "^2.6.0"
+    async "3.2.2"
     browserify-aes "^1.1.1"
     bs58 "^4.0.1"
     keypair "^1.0.1"
@@ -13650,7 +13650,7 @@ libp2p-crypto@~0.14.0:
   integrity sha512-JP3bfEzNik76fFIWOeU909+v76tjj5BMukbPCc61bgh1ixftcHkr4bH79duz+oSxRpGA+orCLxvkhgALV+pfwg==
   dependencies:
     asn1.js "^5.0.1"
-    async "^2.6.1"
+    async "3.2.2"
     browserify-aes "^1.2.0"
     bs58 "^4.0.1"
     keypair "^1.0.1"
@@ -13671,7 +13671,7 @@ libp2p-crypto@~0.16.1:
   dependencies:
     asmcrypto.js "^2.3.2"
     asn1.js "^5.0.1"
-    async "^2.6.1"
+    async "3.2.2"
     bn.js "^4.11.8"
     browserify-aes "^1.2.0"
     bs58 "^4.0.1"
@@ -14210,7 +14210,7 @@ merkle-patricia-tree@^2.1.2, merkle-patricia-tree@^2.3.2:
   resolved "https://registry.yarnpkg.com/merkle-patricia-tree/-/merkle-patricia-tree-2.3.2.tgz#982ca1b5a0fde00eed2f6aeed1f9152860b8208a"
   integrity sha512-81PW5m8oz/pz3GvsAwbauj7Y00rqm81Tzad77tHBwU7pIAtN+TJnMSOJhxBKflSVYhptMMb9RskhqHqrSm1V+g==
   dependencies:
-    async "^1.4.2"
+    async "3.2.2"
     ethereumjs-util "^5.0.0"
     level-ws "0.0.0"
     levelup "^1.2.1"
@@ -14685,7 +14685,7 @@ multihashing-async@~0.4.7:
   resolved "https://registry.yarnpkg.com/multihashing-async/-/multihashing-async-0.4.8.tgz#41572b25a8fc68eb318b8562409fdd721a727ea1"
   integrity sha512-LCc4lfxmTJOHKIjZjFNgvmfB6nXS/ErLInT9uwU8udFrRm2PH+aTPk3mfCREKmCiSHOlCWiv2O8rlnBx+OjlMw==
   dependencies:
-    async "^2.6.0"
+    async "3.2.2"
     blakejs "^1.1.0"
     js-sha3 "^0.7.0"
     multihashes "~0.4.13"
@@ -15732,7 +15732,7 @@ peer-id@~0.10.7:
   resolved "https://registry.yarnpkg.com/peer-id/-/peer-id-0.10.7.tgz#6c12634636fc90a0e7bc76360c95f73564461fdd"
   integrity sha512-VEpMFcL9q0NQijmR0jsj38OGbY4yzaWMEareVkDahopmlNT+Cpsot8btPgsgBBApP9NiZj2Enwvh8rZN30ocQw==
   dependencies:
-    async "^2.6.0"
+    async "3.2.2"
     libp2p-crypto "~0.12.1"
     lodash "^4.17.5"
     multihashes "~0.4.13"
@@ -15742,7 +15742,7 @@ peer-id@~0.12.0:
   resolved "https://registry.yarnpkg.com/peer-id/-/peer-id-0.12.5.tgz#b22a1edc5b4aaaa2bb830b265ba69429823e5179"
   integrity sha512-3xVWrtIvNm9/OPzaQBgXDrfWNx63AftgFQkvqO6YSZy7sP3Fuadwwbn54F/VO9AnpyW/26i0WRQz9FScivXrmw==
   dependencies:
-    async "^2.6.3"
+    async "3.2.2"
     class-is "^1.1.0"
     libp2p-crypto "~0.16.1"
     multihashes "~0.4.15"
@@ -15910,7 +15910,7 @@ portfinder@^1.0.26:
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
   integrity sha512-Se+2isanIcEqf2XMHjyUKskczxbPH7dQnlMjXX6+dybayyHvAf/TCgyMRlzf/B6QDhAEFOGes0pzRo3by4AbMA==
   dependencies:
-    async "^2.6.2"
+    async "3.2.2"
     debug "^3.1.1"
     mkdirp "^0.5.5"
 
@@ -18940,7 +18940,7 @@ squarelink-provider-engine@^15.0.5:
   resolved "https://registry.yarnpkg.com/squarelink-provider-engine/-/squarelink-provider-engine-15.0.5.tgz#93a440c5daec517b1b494424d1c279f195cd781c"
   integrity sha512-rl9586BLpN/ldujibbMsCfq+lEyY/YMkmWqYcbmKs6VUvB56fsIG23HvVFl1mPRUu7XIq4dOt+V+4G6+GcKTtQ==
   dependencies:
-    async "^2.5.0"
+    async "3.2.2"
     backoff "^2.5.0"
     clone "^2.0.0"
     cross-fetch "^2.1.0"
@@ -21285,7 +21285,7 @@ web3-provider-engine@15.0.4:
   resolved "https://registry.yarnpkg.com/web3-provider-engine/-/web3-provider-engine-15.0.4.tgz#5c336bcad2274dff5218bc8db003fa4e9e464c24"
   integrity sha512-Ob9oK0TUZfVC7NXkB7CQSWAiCdCD/Xnlh2zTnV8NdJR8LCrMAy2i6JedU70JHaxw59y7mM4GnsYOTTGkquFnNQ==
   dependencies:
-    async "^2.5.0"
+    async "3.2.2"
     backoff "^2.5.0"
     clone "^2.0.0"
     cross-fetch "^2.1.0"
@@ -21313,7 +21313,7 @@ web3-provider-engine@16.0.1:
   resolved "https://registry.yarnpkg.com/web3-provider-engine/-/web3-provider-engine-16.0.1.tgz#2600a39ede364cdc0a1fc773bf40a94f2177e605"
   integrity sha512-/Eglt2aocXMBiDj7Se/lyZnNDaHBaoJlaUfbP5HkLJQC/HlGbR+3/W+dINirlJDhh7b54DzgykqY7ksaU5QgTg==
   dependencies:
-    async "^2.5.0"
+    async "3.2.2"
     backoff "^2.5.0"
     clone "^2.0.0"
     cross-fetch "^2.1.0"
@@ -21341,7 +21341,7 @@ web3-provider-engine@^13.8.0:
   resolved "https://registry.yarnpkg.com/web3-provider-engine/-/web3-provider-engine-13.8.0.tgz#4c7c1ad2af5f1fe10343b8a65495879a2f9c00df"
   integrity sha512-fZXhX5VWwWpoFfrfocslyg6P7cN3YWPG/ASaevNfeO80R+nzgoPUBXcWQekSGSsNDkeRTis4aMmpmofYf1TNtQ==
   dependencies:
-    async "^2.5.0"
+    async "3.2.2"
     clone "^2.0.0"
     eth-block-tracker "^2.2.2"
     eth-sig-util "^1.4.2"
@@ -21692,7 +21692,7 @@ webpack@^3.0.0:
     acorn-dynamic-import "^2.0.0"
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
-    async "^2.1.2"
+    async "3.2.2"
     enhanced-resolve "^3.4.0"
     escope "^3.6.0"
     interpret "^1.0.0"
