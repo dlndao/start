@@ -17117,7 +17117,7 @@ react-dev-utils@^10.2.1:
     pkg-up "3.1.0"
     react-error-overlay "^6.0.7"
     recursive-readdir "2.2.2"
-    shell-quote "1.7.2"
+    shell-quote "1.7.3"
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
@@ -18548,8 +18548,8 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-shell-quote@1.7.2:
-  version "1.7.2"
+shell-quote@1.7.3:
+  version "1.7.3"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
