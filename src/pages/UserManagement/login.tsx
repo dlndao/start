@@ -85,7 +85,7 @@ function Login() {
           }
         }
       }
-    } catch (error) {
+    } catch (error:any) {
       setLoading(false);
       setLoginError(error.message);
     }

@@ -84,7 +84,7 @@ function ForgotPassword() {
           });
         }
         setLoading(false);
-      } catch (err) {
+      } catch (err:any) {
         alert(err.message ? err.message : err);
         setLoading(false);
       }
