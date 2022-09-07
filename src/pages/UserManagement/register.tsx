@@ -100,7 +100,7 @@ function Register() {
         setLoading(false);
         history.push(location);
       }
-    } catch (error) {
+    } catch (error:any) {
       setLoading(false);
       toast.error(error.message);
     }
