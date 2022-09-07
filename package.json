@@ -51,7 +51,7 @@
     "ipfs-http-client": "^49.0.4",
     "jwt-decode": "^2.2.0",
     "material-ui": "^0.20.2",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "mysql2": "^2.2.5",
     "near-api-js": "^0.36.2",
     "openzeppelin-solidity": "^3.2.0",
