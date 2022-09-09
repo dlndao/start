@@ -18,11 +18,9 @@ $ yarn install
 
 ### Configuration
 #### Initialize Amplify in React application
-```sh
-$ amplify init
 
-* Accept defaults and provide values to those you wish to have as part of initializing amplify environment
-```
+[Please check amplify configuration](CONFIGURE_AMPLIFY.md)
+
 
 
 #### Add Authetication capability
