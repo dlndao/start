@@ -44,3 +44,11 @@ $ yarn start
 * Check your mobile for the verification code. If you haven't received, confirm the user manually from AWS Cognito console
 * Login with the phone number and password
 * should be routed to home page with logout button displayed in the header
+
+
+#### Run Tests
+```
+$ npm run test
+or
+$ yarn test
+```
