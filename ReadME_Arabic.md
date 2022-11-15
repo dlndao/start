@@ -224,3 +224,31 @@ $ yarn start
    - يستدعي Save and publish نفس func مع حفظ الحالة المسمى isPublished true: false ، إذا كان صحيحًا يعني النشر والمعنى الخاطئ ، فقط قم بصياغة الاقتراح ، مرجع func: https://github.com/dlndao/start/blob/ main / src / المكونات / ManageProposal / singleProposal.tsx # L334-L399
 -إلغاء الاقتراح
    - يؤدي إجراء زر الإلغاء إلى تغيير حالة المكون إلى وضع اقتراح العرض وإزالة إضافة اقتراح cel ، المرجع الوظيفي: https://github.com/dlndao/start/blob/main/src/components/ManageProposal/singleProposal.tsx#L512 -ل 527
+
+### معرض العروض Proposal Gallery
+
+-- يمكن لمالك الاقتراح فقط إضافة تحديث في معرض العروض ومشاركته.
+
+-- يمكن لمسؤول MFI مشاهدة المعرض فقط
+
+-- في حالة خاصة ، إذا قام حساب مؤسسة التمويل الأصغر بإنشاء العرض ، فيمكنه إضافة تحديثات إلى المعرض
+
+-- بالنقر فوق علامة "+" الموجودة أسفل الموافقة المسبقة عن علم للاقتراح ، سيتمكن المقترض من تحميل صور متعددة للمقترح.
+    - يعرض زر علامة الجمع إضافة مكون سجل صورة جديد https://github.com/dlndao/start/blob/main/src/components/ManageProposal/singleProposal.tsx#L890-L903
+    - مكون استدعاء زر Plus لسجل الصور ويحتوي على جميع إجراءات سجل الصور وواجهة المستخدم ، المرجع الوظيفي: https://github.com/dlndao/start/blob/main/src/components/ManageProposal/singleProposal.tsx#L1221-L1231
+
+-- سيتم فتح نافذة منبثقة ويمكن للمالك إضافة تحديث من الزر (+)
+    - في بداية مكون سجل الصور ، هناك استدعاء لواجهة برمجة التطبيقات للحصول على بيانات الصور المقترحة والتحديثات من خلال معرف الاقتراح يتم تمريره من مكون الاقتراح الفردي ، مرجع استدعاء API: https://github.com/dlndao/ start / blob / main / src / element / ProposalUpdates / ProposalUpdates / PropagesLog.tsx # L49-L60
+
+-- يمكن للمقترض تحميل الصور لإطلاع المستثمرين / الداعمين على تقدم العرض
+
+-- يمكن للمستخدم مشاركة التحديث عبر تويتر باختيار (Share in Twitter)
+
+-- يمكن للمستخدم إخطار المستثمرين بقرضه عبر البريد الإلكتروني بتحديثه عن طريق اختيار إرسال بريد إلكتروني إلى المستثمرين
+
+-- توجد تسميات وصف لكل صورة.
+
+-- يمكن لأي شخص الوصول لعرض ألبوم الصور فقط.
+
+-- يمكن للمستخدم حذف أي تحديث.
+    - بطاقة سجل الصور هي المكون الفرعي لمكون ProposalUpdates ، ستجد كل إجراءات بطاقة سجل الصور وواجهة المستخدم في هذا الملف: https://github.com/dlndao/start/blob/main/src/components/ProposalUpdates/singleProposalImageLog .tsx
