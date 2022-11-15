@@ -125,3 +125,102 @@ $ yarn start
 * should be routed to home page with logout button displayed in the header
 
 
+### إنشاء حسابك الأول
+#### خطوات التسجيل لمشرفي مؤسسات التمويل الأصغر
+- ملاحظة Dev: مرجع صفحة البداية: https://github.com/dlndao/start/blob/main/src/pages/start/index.tsx
+- ملاحظة Dev: في صفحة البداية في النقطة الأولية ، نتحقق من اسم MFI من عنوان URL ونحصل على رسالة ترحيب MFI
+- يتلقى هذا func رسالة ترحيب MFI من قاعدة البيانات الخاصة بنا: https://github.com/dlndao/start/blob/main/src/pages/start/index.tsx#L35-L44
+- اختر لغة المرجع: https://github.com/dlndao/start/blob/main/src/pages/start/index.tsx#L46-L51
+- نحفظ اللغة المختارة على التخزين المحلي
+
+ لأي مستخدم لمؤسسة التمويل الأصغر: https://start.dlndao.org/#/
+
+١. انقر فوق "Get Started" ثم املأ البيانات المطلوبة: (الاسم الأول ، واسم العائلة ، ورقم الهاتف ، والبريد الإلكتروني ، وكلمة المرور ، وتأكيد كلمة المرور).
+   - يجب ألا تقل كلمة المرور عن 8 أحرف.
+   - رقم الهاتف بالصيغة الدولية.
+   - يجب عدم استخدام رقم الهاتف والبريد الإلكتروني من قبل مع DLN.
+   - 
+
+٢. انقر فوق مربع الاختيار بجوار "I have read and agree to the Terms of Service and Privacy Policy".
+
+٣. انقر فوق "Create Profile".
+    - تسجيل مرجع func: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/register.tsx
+    - إنشاء زر الملف الشخصي المرجع: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/register.tsx#L42-L107
+
+٤. في مساحة "Verify Code" ، أدخل رمز التحقق المستلم.
+    - تحقق من الكود المرجع: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/verifyCode.tsx#L41-L58
+
+٥. انقر فوق "Verify".
+
+٦. أدخل رقم هاتفك وكلمة المرور.
+   - مرجع صفحة تسجيل الدخول: https: //github.com/dlndao/start/blob/main/src/pages/UserManagement/login.tsx
+   - مرجع وظيفة تسجيل الدخول: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/login.tsx#L31-L92
+
+٧. انقر فوق "Login".
+
+٨. أرسل لنا بيانات الاعتماد الخاصة بك لتعيينك كمسؤول لحساب مؤسسة التمويل الأصغر الخاص بك.
+لقد قمت الآن بإنشاء حساب بنجاح.
+
+#### خطوات التسجيل للمستخدمين العاديين (المقترض والمستثمر)
+ بالنسبة لمستخدمي أي مؤسسة تمويل أصغر (المقترض والمستثمر): https://start.dlndao.org/#/
+
+١. انقر فوق "Get Started".
+    - مرجع صفحة البدء: https://github.com/dlndao/start/blob/main/src/pages/start/index.tsx
+
+٢. املأ البيانات المطلوبة: (الاسم الأول ، واسم العائلة ، ورقم الهاتف ، والبريد الإلكتروني ، وكلمة المرور ، وتأكيد كلمة المرور ، والسيرة الذاتية).
+
+٣. انقر فوق مربع الاختيار بجوار "I have read and agree to the Terms of Service and Privacy Policy".
+    - يجب ألا تقل كلمة المرور عن 8 أحرف.
+    - رقم الهاتف بالصيغة الدولية.
+    - يجب عدم استخدام رقم الهاتف والبريد الإلكتروني من قبل مع DLN.
+    - التحقق من صحة التسجيل على مدخلات المستخدم المرجع func: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/register.tsx#L127-L153
+    
+٤. انقر فوق "Create Profile".
+
+٥. إنشاء مرجع ممتع للملف الشخصي: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/register.tsx#L42-L107
+
+٦. في مساحة "Verify Code" ، أدخل رمز التحقق الذي تلقيته على هاتفك المحمول.
+
+٧. انقر فوق "Verify".
+    - تحقق من كود func ref: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/verifyCode.tsx#L41-L58
+
+٨. أدخل رقم هاتفك وكلمة المرور.
+    - مرجع صفحة تسجيل الدخول: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/login.tsx
+
+٩. انقر فوق "Login".
+    - مرجع وظيفة تسجيل الدخول: https://github.com/dlndao/start/blob/main/src/pages/UserManagement/login.tsx#L31-L92
+لقد قمت الآن بإنشاء حساب بنجاح.
+لا يحتاج المستخدمون (المقترض والمستثمر) إلى تسجيل الدخول في كل مرة تتصفح فيها تطبيقنا ، حيث سيتم تسجيل دخولهم إلى أن يتم تسجيل خروجهم ، وقمنا بحفظ بيانات المستخدمين على التخزين المحلي.
+
+
+### ابتكر اقتراحك الأول Create your first proposal
+
+- لنبدأ بسير عمل المستعير
+مرحبًا بك على متن الطائرة - خطوات بسيطة وسهلة نحو القرض الخاص بك
+
+١. افتح https://start.dlndao.org/#/
+
+٢. تسجيل الدخول بأوراق اعتمادك
+    - الصفحة الرئيسية تحتفظ بعلامات تبويب جميع فئات العروض (استعارة ، استثمار ، سداد ، تجاهل)
+    - مرجع الصفحة الرئيسية: https://github.com/dlndao/start/blob/main/src/pages/HomeTabs/home.tsx
+
+٣. حدد علامة التبويب "استعارة".
+
+٤. اضغط على (+) لإضافة عرض جديد.
+
+٥. يتم عرض زر الإضافة فارغًا لشكل الاقتراح مع إضافة خيار اقتراح جديد عن طريق تغيير حالة المكون ، وإضافة زر func ref: https://github.com/dlndao/start/blob/main/src/pages/HomeTabs/borrow.tsx # L19-L21
+
+٦. قم بتعبئة البيانات المطلوبة:
+ - اسم الاقتراح: عنوان الاقتراح.
+ - صورة الاقتراح: أضف صورة للمقترح.
+ - قيمة القرض: المبلغ المطلوب.
+ - شهور السداد: عدد الأشهر المطلوبة لسداد القرض.
+ - التاريخ: حدد وقتًا لاستلام القرض.
+ - وصف الاقتراح: وصف الاقتراح وأهميته.
+
+٧. اختر أحد الخيارات الثلاثة:
+- حفظ الاقتراح كمسودة (يمكن تعديل الاقتراح).
+- انشر اقتراحك ليراه الجميع (يمكن تعديل الاقتراح).
+   - يستدعي Save and publish نفس func مع حفظ الحالة المسمى isPublished true: false ، إذا كان صحيحًا يعني النشر والمعنى الخاطئ ، فقط قم بصياغة الاقتراح ، مرجع func: https://github.com/dlndao/start/blob/ main / src / المكونات / ManageProposal / singleProposal.tsx # L334-L399
+-إلغاء الاقتراح
+   - يؤدي إجراء زر الإلغاء إلى تغيير حالة المكون إلى وضع اقتراح العرض وإزالة إضافة اقتراح cel ، المرجع الوظيفي: https://github.com/dlndao/start/blob/main/src/components/ManageProposal/singleProposal.tsx#L512 -ل 527
